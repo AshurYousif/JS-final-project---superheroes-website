@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="search.js"></script>
+    <title>Superhero Search</title>
+</head>
+
+<body>
+    <nav id="nav-bar">
+        <div class="nav-container">
+            <div class="nav-bar--wrapper">
+                <div class="nav-bar__left">
+                    <a href="" class="nav__logo--wrapper">
+                        <img src="./assets/logo.png" alt="" class="nav__logo">
+                    </a>
+                    <a href="" class="nav-bar__link">
+                        <h1 class="nav__title">Superheroes</h1>
+                    </a>
+                </div>
+                <div class="nav-bar__right">
+                    <button class="home__button">Home</button>
+                    <a href="" class="nav-bar__link">Discover</a>
+                    <a href="" class="nav-bar__link nav-bar__search">Search</a>
+                    <a href="" class="nav-bar__link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="superheroes">
+        <div class="container">
+            <div class="row">
+                <div class="search--wrapper">
+                    <div class="search--wrapper__left">
+                        <div class="search-bar--wrapper">
+                            <input type="text" placeholder="Search" class="search-bar" onfocus="toggalResultsOpen()"
+                                onblur="toggalResultsClose()" onkeyup="resultsRender()">
+                            <div class="search-results">
+                                <div class="search-result__suggestion">Batman</div>
+                                <div class="search-result__suggestion">Superman</div>
+                                <div class="search-result__suggestion">Flash</div>
+                                <div class="search-result__suggestion">Green Arrow</div>
+                                <div class="search-result__suggestion">Ironman</div>
+                            </div>
+                        </div>
+                        <button class="search-button" onclick="superheroSearch()">Search</button>
+                    </div>
+                    <select name="" id="search-select">
+                        <option value="">Filter</option>
+                    </select>
+                </div>
+                <div class="superheroes"></div>
+                <div class="search__pages">
+                    <h1 class="pages__heading">Pages</h1>
+                    <div class="pages--wrapper">
+                        <button class="page page-button arrow-left"><<</button>
+                        <div class="pages__selector--wrapper">
+                            <div class="pages">
+                                <button class="page page-button">1</button>
+                                <button class="page page-button">2</button>
+                                <button class="page page-button">3</button>
+                                <button class="page page-button">4</button>
+                                <button class="page page-button">5</button>
+                            </div>
+                            <div class="slider--wrapper">
+                                <button class="slider-button arrow-left__slider"><<</button>
+                                <input type="range" min="1" max="100" value="1" class="slider" id="slider-range">
+                                <button class="slider-button arrow-right__slider">>></button>
+                            </div>
+                        </div>
+                        <button class="page page-button arrow-right">>></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer--wrapper">
+                    <h1 class="footer__heading">Copyright © - Superheroes Database Website</h1>
+                    <div class="footer__links">
+                        <a href="#" class="footer__link">Home</a>
+                        <a href="" class="footer__link">Discover</a>
+                        <a href="" class="footer__link">Search</a>
+                        <a href="" class="footer__link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
